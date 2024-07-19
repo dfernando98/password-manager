@@ -1,4 +1,4 @@
-# Password Manager
+# Password Manager Desktop Application
 
 ## This is an application that lets users store and retrieve passwords after user name is given. The project is written in Python & SQL
 
