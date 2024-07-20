@@ -7,11 +7,18 @@
 2. What hashing function should be used for this design?
 
 ### Tasks
-1. Create an SQL database
-2. Create basic terminal interface
-3. Hash passwords
+1. Create a database to store the passwords
+2. Create a GUI for users to:
+    1. Access the database of passwords with a masterPassword
+    2. Add new password entries with fields set for
+        1. URL/site
+        2. username
+        3. password
+    3. Delete password entries
 
-### Requirements
-1. User needs to be able to type in site or app name or URL and get back password
-2. Password storage in SQL and password retrieval in SQL
-3. Auto copy password to clipboard
+#### Creating the GUI
+
+Use Tkinter to create the GUI
+
+1. Create functionality for users to create a new masterpassword
+
