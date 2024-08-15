@@ -7,7 +7,6 @@ import pyperclip
 import base64
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-# from cryptography.hazmat.backends import default_backend
 from cryptography.fernet import Fernet
 import secrets
 import string
@@ -103,8 +102,8 @@ def firstTimeScreen(hasMasterKey=None):
     txt.focus()
 
     lbl1 = Label(window, text="Re-enter Password")
-    lbl.config(anchor=CENTER)
-    lbl.pack()
+    lbl1.config(anchor=CENTER)
+    lbl1.pack()
 
     txt1 = Entry(window, width=20, show="*")
     txt1.pack()
@@ -116,6 +115,7 @@ def firstTimeScreen(hasMasterKey=None):
             cursor.execute(sql)
 
             hashedPassword = hashPassword(txt.get().encode())
+            # Generate a random uuid key
             key = uuid.uuid4().hex
             hashedRecoveryKey = hashPassword(key.encode())
 
