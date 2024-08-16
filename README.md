@@ -16,9 +16,4 @@
         3. password
     3. Delete password entries
 
-#### Creating the GUI
-
-Use Tkinter to create the GUI
-
-1. Create functionality for users to create a new masterpassword
 
