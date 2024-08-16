@@ -1,6 +1,6 @@
 # Password Manager Desktop Application
 
-## This is an application that lets users store and retrieve passwords after user name is given. The project is written in Python & SQL
+## This is an application that lets users store and retrieve passwords using a masterpassword. The application is written in Python & SQL.
 
 ### Questions
 1. How do password managers work?
